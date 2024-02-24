@@ -11,28 +11,58 @@ html {
 }
 
 body {
-  margin: 20;
-  padding: 30px;
+  margin: 20px;
+  /* padding: 30px; */
   background-color: #1c1c1e;
   color: white;
   font-family: "Lato", sans-serif;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* background-color: white; */
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* .dropdownContent a {
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdownContent a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+} */
 ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 li {
   display: flex;
-  flex-direction: column;
-  margin-right: 20px;
+  position: relative;
 }
 
 li a {
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 li a:hover {
@@ -62,7 +92,7 @@ button a {
   color: rgb(240, 238, 238);
 }
 button:hover a {
-  background-color: #800858;
+  background-color: #fa0aaa;
   color: white;
   padding: 7px;
 }
@@ -75,28 +105,27 @@ button:hover a {
 }
 
 h2 {
-  color: #800858;
+  color: #fa0aaa;
 }
 .aboutMe {
   margin: 0;
 }
 .aboutMe a {
-  color: #800858;
+  color: #fa0aaa;
   line-height: -3px;
   /* text-decoration: none; */
 }
 
-
 /* Desktop design */
-/* @media (min-width: 800px) {
+@media (min-width: 800px) {
   body {
     padding: 10rem 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .blog_page{
+  /* .blog_page{
     margin: 0 auto;
 
-  }
-} */
+  } */
+}
